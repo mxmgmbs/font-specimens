@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Demo</title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+div#tipDiv {
+    font-size:11px; line-height:1.2;
+    color:#000; background-color:#E1E5F1; 
+    border:1px solid #667295; padding:4px; 
+    width:210px;
+}
+
+</style>
+<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+<script type="text/javascript">
+dw_Tooltip.defaultProps = {
+    //activateOnClick: true,
+    //supportTouch: true // false by default
+}
+
+// Problems, errors? See http://www.dyn-web.com/tutorials/obj_lit.php#syntax
+
+dw_Tooltip.content_vars = {
+    L1: 'Some text in the tooltip for link 1',
+    L2: 'The tooltip can contain <strong><em>Rich HTML</em></strong>',
+    L3: '<div style="text-align:center"><img src="images/dot-com-btn.gif" /></div>',
+    L4: 'You can have a tooltip pop up when hovering over an image too!'
+}
+
+</script>
+</head>
+<body>
+
+<h1>Basic Tooltip Setup</h1>
+
+<p>This example demonstrates code defaults: using the showTip class to indicate that the link (or other element) has a tooltip, and a second class to point to an entry in dw_Tooltip.content_vars. View the source code to see.</p>
+
+
+<p><a href="#" class="showTip L1">Link 1</a></p>
+<p><a href="#" class="showTip L2">Link 2</a></p>
+<p><a href="#" class="showTip L3">Link 3</a></p>
+<p><a href="#" class="showTip L4"><img src="images/dw-btn.gif" alt="" border="0"></a></p>
+
+<p>&nbsp;</p>
+<p>Back to <a href="index.html">index</a> for more demo's and information.</p>
+
+
+</body>
+</html>

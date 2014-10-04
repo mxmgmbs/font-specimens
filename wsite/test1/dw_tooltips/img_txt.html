@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Demo</title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+div#tipDiv {
+    font-size:11px; line-height:1.2;
+    color:#000; background-color:#E1E5F1; 
+    border:1px solid #667295; 
+    padding:4px;
+    width:200px; 
+}
+
+/* for optional caption */
+div#tipDiv div.caption {
+    font-weight:bold; text-align:center;
+    margin-bottom:4px;
+    }
+
+/* for divs with classes img and txt 
+   used in dw_Tooltip.wrapImageOverText and other image-text formatting functions */
+div#tipDiv div.img { 
+    text-align:center; 
+    margin:4px 0; 
+    }
+div#tipDiv div.txt { 
+    text-align:center; 
+    margin:4px 0;
+    }
+</style>
+<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+dw_Tooltip.defaultProps = {
+    //supportTouch: true, // set false by default
+    wrapFn: dw_Tooltip.wrapImageOverText // or dw_Tooltip.wrapTextOverImage
+}
+// See info on image-text functions at http://www.dyn-web.com/code/tooltips/documentation2.php#img_txt
+// Problems, errors? See http://www.dyn-web.com/tutorials/obj_lit.php#syntax
+
+dw_Tooltip.content_vars = {
+    L1: {
+        img: 'images/dw-btn.gif',
+        txt: 'dyn-web button',
+        w: 100 // width of tooltip
+    },
+    L2: {
+        img: 'images/dot-com-btn.gif',
+        txt: 'dyn-web.com button',
+        w: 184
+    },
+    L3: {
+        caption: 'A Button Graphic', // optional caption 
+        img: 'images/dot-com-btn.gif',
+        txt: 'A button for dyn-web.com',
+        w: 184
+    }
+}
+
+</script>
+</head>
+<body>
+
+<h1>Images and Text in the Tooltip</h1>
+
+<ul>
+    <li><a href="#" class="showTip L1">Link 1</a></li>
+    <li><a href="#" class="showTip L2">Link 2</a></li>
+    <li><a href="#" class="showTip L3">Link 3</a>, with optional caption</li>
+</ul>
+
+
+<p>See online <a href="http://www.dyn-web.com/code/tooltips/documentation2.php#img_txt">documentation</a> and <a href="http://www.dyn-web.com/code/tooltips/image_text.php">demo's</a> for more ways to display images and text in the tooltip.</p>
+
+<p>Back to <a href="index.html">index</a> for more demo's and information.</p>
+
+</body>
+</html>

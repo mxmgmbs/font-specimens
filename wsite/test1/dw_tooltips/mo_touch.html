@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Demo</title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+div#tipDiv {
+    font-size:11px; line-height:1.2;
+    color:#000; background-color:#E1E5F1; 
+    border:1px solid #667295; 
+    width:224px; padding:4px;
+}
+    
+</style>
+<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+<script type="text/javascript">
+dw_Tooltip.defaultProps = {
+    supportTouch: true
+}
+
+// Problems, errors? See http://www.dyn-web.com/tutorials/obj_lit.php#syntax
+
+dw_Tooltip.content_vars = {
+    L1: 'Some text in the tooltip for link one.',
+    L2: 'Text for the second link in our demo.'
+}
+
+</script>
+</head>
+<body>
+
+
+<h1>Touch Support with Mouseover Activation for Desktop Browsers</h1>
+
+<ul>
+    <li><a href="#" class="showTip L1">Link 1</a></li>
+    <li><a href="#" class="showTip L2">Link 2</a></li>
+</ul>
+
+
+<p>This example demonstrates providing a close link at the bottom of the tooltip for touch devices. See <a href="http://www.dyn-web.com/code/tooltips/documentation2.php#close">information</a> and <a href="http://www.dyn-web.com/code/tooltips/touch.php">demonstration</a> of other alternatives online. For example, the <a href="http://www.dyn-web.com/code/tooltips/image_text.php">images demo</a> provides a close box image for touch devices with mouseover activation for desktop browsers.</p>
+
+
+<p>Back to <a href="index.html">index</a> for more demo's and information.</p>
+
+</body>
+</html>

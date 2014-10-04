@@ -1,0 +1,116 @@
+/*
+
+COLORS
+
+link orange #FB4
+blue #4BF
+green #1FB
+
+
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #EEE;
+  background: #262524;
+}
+
+/* margins */
+h1, h2, h3, h4, h5, h6,
+p,
+ol, ul,
+pre {
+  margin-top: 0;
+  margin-bottom: 1.0em;
+}
+
+/* Fonts
+------------------------- */
+
+/* montserrat */
+
+h1, h2, h3, h4, h5, h6,
+#site-nav li,
+.tagline,
+.element-item,
+.buy-button,
+.big-ol-buttons .button,
+.param-bit b,
+#in-use-container,
+#multiple-sort-by-demo,
+.support-button {
+  font-family: 'Montserrat', Gotham, 'Proxima Nova', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+/* metafizzy logo */
+@font-face {
+  font-family: 'Metafizzy Logo';
+  src: url('../fonts/metafizzylogo-regular.eot');
+  src: url('../fonts/metafizzylogo-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/metafizzylogo-regular.woff') format('woff'),
+       url('../fonts/metafizzylogo-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---- links ---- */
+
+a,
+a code {
+  color: #FB4;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover code {
+  color: #4BF;
+}
+
+a:active,
+a:active code {
+  color: #1FB;
+  background: black;
+}
+
+/* ---- headers ---- */
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.65em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1.4em;
+  margin-top: 1.0em;
+  margin-bottom: 0.8em;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+}
+
+/* ---- lists ---- */
+
+ul, ol {
+  padding-left: 1.8em;
+}

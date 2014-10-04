@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Demo</title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+div#tipDiv {
+    font-size:11px; line-height:1.2;
+    color:#000; background-color:#E1E5F1; 
+    border:1px solid #667295; padding:4px;
+    width:270px; 
+}
+</style>
+<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+dw_Tooltip.defaultProps = {
+    //supportTouch: true, // set false by default
+    hoverable: true
+}
+
+// Problems, errors? See http://www.dyn-web.com/tutorials/obj_lit.php#syntax
+
+dw_Tooltip.content_vars = {
+    L1: 'Clickable <a href="index.html">links</a> can be placed in a tooltip that is declared hoverable. The tooltip will wait briefly for the viewer to hover over it.',
+    L2: 'A property setting declares that the tooltip is hoverable. See the source code in this example and <a href="http://www.dyn-web.com/code/tooltips/documentation2.php">documentation online.</a>'
+}
+</script>
+</head>
+<body>
+<h1>Hoverable Tooltips</h1>
+
+<p>A &quot;hoverable&quot; tooltip will wait for the viewer to hover over it, so clickable links can be placed inside.</p>
+
+<ul>
+    <li><a href="#" class="showTip L1">Link 1</a></li>
+    <li><a href="#" class="showTip L2">Link 2</a></li>
+</ul>
+
+<p>Back to <a href="index.html">index</a> for more demo's and information.</p>
+
+
+
+
+</body>
+</html>

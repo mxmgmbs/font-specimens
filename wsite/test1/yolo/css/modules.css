@@ -1,0 +1,212 @@
+.tagline {
+  font-size: 1.5em;
+  line-height: 1.35;
+  margin-bottom: 0.4em;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 0 0.2em 0.2em 0;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-weight: 500;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* hide radio inputs */
+.button input[type="radio"] { display: none; }
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button 
+	border-radius: 0.5em 0 0 0.5em;
+  border-radius: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+
+
+/* ---- #content ---- */
+
+#content .primary-content,
+#footer .primary-content {
+  border-top: 2px solid #484542;
+}
+
+#content li {
+  margin-bottom: 0.2em;
+}
+
+/* ---- parameters ---- */
+
+.params {
+  padding: 0;
+  list-style: none;
+}
+
+.param {
+  background: hsla(0, 0%, 100%, 0.1);
+  padding: 0.4em 0.8em;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.param,
+.param code {
+  font-size: 14px;
+}
+
+/* just one param */
+div.param {
+  margin-bottom: 0.8em;
+}
+
+.param-bit {
+  display: inline;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 1.0em;
+}
+
+.param-bit:last-child { margin-right: 0}
+
+.param-name {
+  font-size: 15px;
+  font-weight: normal;
+  color: #BBB;
+}
+
+.param-bit b {
+  font-weight: normal;
+}
+
+.param-bit.type .value {
+  color: #ADF;
+}
+
+/* ---- instruction ---- */
+
+.instruction {
+  font-size: 18px;
+  margin-bottom: 0.2em;
+  color: #888;
+}
+
+/* ---- warning ---- */
+
+.warning {
+  position: relative;
+  min-height: 40px;
+  background: #FF8;
+  color: #333;
+  border-radius: 5px;
+  margin-bottom: 0.8em;
+  padding: 10px;
+  padding-left: 60px;
+}
+
+.warning a { color: #09F; }
+
+.warning p:last-child {
+  margin-bottom: 0;
+}
+
+.warning:before {
+  content: '!';
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: red;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+/* ---- notification ---- */
+
+#notification {
+  display: none; /* hide by default */
+  position: fixed;
+  z-index: 20; /* above most stuff */
+  bottom: 0px;
+  right: 0px;
+  background: #A2C;
+  padding: 0.5em;
+  color: white;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+/* ---- top-banner ---- */
+
+#top-banner {
+  background: #FF0;
+  padding: 0.6em 0;
+  color: #222;
+}
+
+#top-banner h2 {
+  margin-bottom: 0.4em;
+}
+
+#top-banner a {
+  color: #06F;
+  font-weight: 500;
+}
+
+#top-banner a:hover { color: #F06; }
+
+/* ---- support button ---- */
+
+.support-button {
+  font-size: 20px;
+}
+
+/* ---- desktop media query ---- */
+
+@media screen and ( min-width: 960px ) {
+  .tagline {
+    font-size: 1.8em;
+  }
+}

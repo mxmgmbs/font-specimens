@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Demo</title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+/* optional styles */
+div#tipDiv {
+    background-color:#E1E5F1; 
+    border:1px solid #667295;
+    padding:4px;
+    width:200px;
+}
+
+</style>
+<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* 2 functions that can be used to vary tooltip width according to image width:
+dw_Tooltip.wrapImageToWidth and dw_Tooltip.wrapToWidth
+See www.dyn-web.com/code/tooltips/documentation2.php#wrapFn for info */
+dw_Tooltip.defaultProps = {
+    //supportTouch: true, // set false by default
+    wrapFn: dw_Tooltip.wrapImageToWidth
+}
+
+// Problems, errors? See http://www.dyn-web.com/tutorials/obj_lit.php#syntax
+
+dw_Tooltip.content_vars = {
+    L1: {
+        img: 'images/dw-btn.gif',
+        w: 80, // width of image
+        h: 24 // height of image
+
+    },
+    L2: {
+        img: 'images/dot-com-btn.gif',
+        w: 176,
+        h: 30
+    },
+    L3: {
+        img: 'images/mandala2.gif',
+        w: 150,
+        h: 150
+    }
+}
+
+</script>
+</head>
+<body>
+
+<h1>Images in the Tooltip</h1>
+
+
+<ul>
+    <li><a href="#" class="showTip L1">Link 1</a></li>
+    <li><a href="#" class="showTip L2">Link 2</a></li>
+    <li><a href="#" class="showTip L3">Link 3</a></li>
+</ul>
+
+
+<p>Images in the tooltip can be combined with other features of the code. See <a href="http://www.dyn-web.com/code/tooltips/image_text.php">demos</a> and <a href="http://www.dyn-web.com/code/tooltips/documentation2.php#wrapFn">information</a> online.</p>
+
+<p>Back to <a href="index.html">index</a> for more demo's and information.</p>
+
+</body>
+</html>
