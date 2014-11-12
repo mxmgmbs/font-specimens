@@ -1,6 +1,0 @@
-
-
-abcdefghijklmnopqrstuvwxyz[äöüßåøæœç]
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-1234567890(.,;:?!$¢£¥&-*){ÄÖÜÅØÆŒÇ}
-
